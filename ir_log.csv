@@ -1,0 +1,10 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S03_rgb,IR_sim,"RGB ban đêm rất tối; vật hình trụ trên ghế giữa không thấy trên RGB, chỉ thấy trên S03_ir",object (có/không có box),"RGB không vẽ object; S03_ir vẽ object rear_middle type=other"
+S08_rgb,IR_sim,"RGB tối, không thấy rõ vùng ngực người ghế rear_right; S08_ir thấy rõ không có dây",seatbelt,"S08_rgb ghi unknown, S08_ir ghi not_worn; không chép giá trị từ ảnh IR sang RGB"
+S01_ir,IR_sim,"Mất màu: ghế trẻ em hoa văn xanh và gối tím trên RGB chỉ còn độ sáng trên IR-sim",object / child_seat (phân lớp),"Phân biệt child_seat và object bằng hình dạng (lưng ghế, tựa đầu), không dựa vào màu"
+S03_ir,IR_sim,"IR-sim chiếu sáng đều cả cabin ban đêm, thấy rõ ghế trẻ em và nôi mà RGB gần như đen",child_seat / infant_seat (box),"Vẽ box trên cả hai ảnh, nhưng phải tăng brightness trên CVAT mới thấy được trên RGB"
+D01,real_IR,"Mặt tài xế quay đi, chỉ thấy sống mũi; mắt không thấy",eye_left / eye_right; face13,"eye_left, eye_right = unknown; face13 chỉ nose_tip hiện, 12 điểm còn lại outside"
+D02,real_IR,"Đeo kính trong: NIR xuyên qua tròng, vẫn thấy khe mắt; gọng kính đè lên một phần mí",eye_left / eye_right; glasses,"glasses=clear, mắt=open; điểm mắt để hiện, không bật occluded cho cả cụm"
+D06,real_IR,"Thấy gọng kính nhưng trên NIR không phân biệt được tròng trong hay kính râm",glasses,"Ghi clear theo gọng nhìn thấy; không ghi none; ca mơ hồ clear/sun"
+D05,real_IR,"Chai nước áp vào miệng che khóe miệng và môi",face13 (mouth_*, lip_*),"4 điểm miệng bật occluded; điểm mắt để hiện vì mắt mở nhìn thấy được"
+D03,real_IR,"Mặt nằm trong bóng tối, đầu cúi và quay; không thấy vùng mắt",eye_left / eye_right; glasses,"Mắt=unknown, glasses=unknown; điểm mắt face13 chuyển sang outside thay vì đoán vị trí"
