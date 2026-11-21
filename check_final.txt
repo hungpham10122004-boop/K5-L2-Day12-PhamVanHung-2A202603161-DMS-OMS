@@ -1,0 +1,8 @@
+File: export_final.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=14, face=16, face13=6, hand=9, infant_seat=4, object=9, person=16
+  [WARN] D02.png: left_eye_outer nằm bên trái ảnh so với right_eye_outer: kiểm lại quy ước trái/phải theo người (đúng nếu mặt quay hẳn sang bên)
+Kết quả: 0 lỗi, 1 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+Giải thích cảnh báo và ghi chú:
+- WARN D02: ảnh D## xoay ~90°, hai mắt xếp theo trục y. Đã kiểm left_eye_* có y lớn hơn right_eye_* (left_eye_outer y=845 > right_eye_outer y=542) → gán đúng theo GUIDE 4.6; luật của script so theo trục x nên báo nhầm.
+- child_seat ở S01 (rear_right), S03 (rear_right), S04 (rear_left), S08 (rear_left) có trẻ em ngồi. Theo GUIDE 3 không gán trẻ em; occupied ghi unknown vì guideline v1.0 không có giá trị yes.
+- infant_seat ở S03, S05 (rear_left) đặt nghiêng ngang ghế, facing=front là phán đoán, ca mơ hồ (đưa vào câu hỏi leo thang).

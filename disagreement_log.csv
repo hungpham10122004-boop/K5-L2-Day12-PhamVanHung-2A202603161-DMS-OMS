@@ -1,0 +1,100 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.34,,ambiguous,4.1 face,"Hai box lệch nhau (mặt quay đi, khó xác định mép); giữ box của mình, ôm phần mặt thấy được"
+D01.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.1 face,"Hai box lệch nhau (mặt quay đi, khó xác định mép); giữ box của mình, ôm phần mặt thấy được"
+D01.png,face13,left_eye_outer.occluded,khác cờ,0,1,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_outer.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_inner.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_upper.occluded,khác cờ,0,1,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_upper.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_lower.occluded,khác cờ,0,1,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,left_eye_lower.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,mouth_left.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,mouth_right.occluded,khác cờ,0,1,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,mouth_right.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,lip_upper.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D01.png,face13,lip_lower.outside,khác cờ,1,0,mine,4.6,"Mặt quay đi, không thấy mắt và miệng, không đoán chắc vị trí → outside; peer đặt occluded/hiện là đoán"
+D02.png,face13,mouth_left.outside,khác cờ,0,1,ambiguous,4.6,"Miệng: mình để hiện, peer để outside; vùng miệng nằm sát mép khung và bị cổ áo che một phần → cùng xem lại"
+D02.png,face13,mouth_right.outside,khác cờ,0,1,ambiguous,4.6,"Miệng: mình để hiện, peer để outside; vùng miệng nằm sát mép khung và bị cổ áo che một phần → cùng xem lại"
+D02.png,face13,lip_upper.outside,khác cờ,0,1,ambiguous,4.6,"Miệng: mình để hiện, peer để outside; vùng miệng nằm sát mép khung và bị cổ áo che một phần → cùng xem lại"
+D02.png,face13,lip_lower.outside,khác cờ,0,1,ambiguous,4.6,"Miệng: mình để hiện, peer để outside; vùng miệng nằm sát mép khung và bị cổ áo che một phần → cùng xem lại"
+D03.png,face,eye_left,khác giá trị (IoU=0.86),unknown,open,mine,"4.4-1, 4.5","Không thấy rõ khe mắt (mặt quay/bóng tối/gọng kính/tay che) → unknown, không suy ra open"
+D03.png,face,eye_right,khác giá trị (IoU=0.86),unknown,open,mine,"4.4-1, 4.5","Không thấy rõ khe mắt (mặt quay/bóng tối/gọng kính/tay che) → unknown, không suy ra open"
+D03.png,face,glasses,khác giá trị (IoU=0.86),unknown,clear,mine,4.5 glasses,"Vùng mắt trong bóng tối, không thấy gọng rõ → unknown"
+D03.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.2 DMS, 4.4-1",Vùng peer vẽ tay không thấy rõ bàn tay (D03 là tay áo/khuỷu; D05 bàn tay chìm trong tối) → không vẽ box
+D03.png,face13,left_eye_outer.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,left_eye_inner.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,left_eye_upper.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,left_eye_lower.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,right_eye_outer.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,right_eye_inner.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,right_eye_upper.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,right_eye_lower.outside,khác cờ,1,0,mine,4.6,Không thấy vùng mắt → outside thay vì đặt điểm đoán
+D03.png,face13,nose_tip.occluded,khác cờ,1,0,ambiguous,4.6,"Mũi/miệng trong bóng tối: mình occluded (đoán được vị trí), peer để hiện"
+D03.png,face13,mouth_left.occluded,khác cờ,1,0,ambiguous,4.6,"Mũi/miệng trong bóng tối: mình occluded (đoán được vị trí), peer để hiện"
+D03.png,face13,mouth_right.occluded,khác cờ,1,0,ambiguous,4.6,"Mũi/miệng trong bóng tối: mình occluded (đoán được vị trí), peer để hiện"
+D03.png,face13,lip_upper.occluded,khác cờ,1,0,ambiguous,4.6,"Mũi/miệng trong bóng tối: mình occluded (đoán được vị trí), peer để hiện"
+D03.png,face13,lip_lower.occluded,khác cờ,1,0,ambiguous,4.6,"Mũi/miệng trong bóng tối: mình occluded (đoán được vị trí), peer để hiện"
+D04.png,face,eye_right,khác giá trị (IoU=0.56),unknown,open,mine,"4.4-1, 4.5","Không thấy rõ khe mắt (mặt quay/bóng tối/gọng kính/tay che) → unknown, không suy ra open"
+D04.png,face,glasses,khác giá trị (IoU=0.56),none,clear,ambiguous,4.5 glasses,"Mình ghi none, peer ghi clear; tay che gần vùng mắt, không chắc có gọng → nên hỏi coach, tạm giữ none"
+D04.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.7 phone,Vật tối trên tay gần miệng không thấy cạnh/góc/màn hình điện thoại → không vẽ phone
+D04.png,face13,right_eye_outer.occluded,khác cờ,0,1,mine,4.6,Ngón tay che mắt phải và mũi → occluded
+D04.png,face13,right_eye_inner.occluded,khác cờ,1,0,mine,4.6,Ngón tay che mắt phải và mũi → occluded
+D04.png,face13,right_eye_upper.occluded,khác cờ,1,0,mine,4.6,Ngón tay che mắt phải và mũi → occluded
+D04.png,face13,right_eye_lower.occluded,khác cờ,1,0,mine,4.6,Ngón tay che mắt phải và mũi → occluded
+D04.png,face13,nose_tip.occluded,khác cờ,1,0,mine,4.6,Ngón tay che mắt phải và mũi → occluded
+D04.png,face13,mouth_right.outside,khác cờ,1,0,mine,4.6,Tay che miệng; khóe miệng phải không đoán được → outside
+D05.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.2 DMS, 4.4-1",Vùng peer vẽ tay không thấy rõ bàn tay (D03 là tay áo/khuỷu; D05 bàn tay chìm trong tối) → không vẽ box
+D05.png,face13,right_eye_outer.occluded,khác cờ,0,1,ambiguous,4.6,"Khóe ngoài mắt phải sát gọng kính: mình để hiện, peer occluded"
+D05.png,face13,mouth_left.occluded,khác cờ,1,0,mine,4.6,Chai nước che miệng → occluded
+D05.png,face13,mouth_right.occluded,khác cờ,1,0,mine,4.6,Chai nước che miệng → occluded
+D05.png,face13,lip_upper.occluded,khác cờ,1,0,mine,4.6,Chai nước che miệng → occluded
+D05.png,face13,lip_lower.occluded,khác cờ,1,0,mine,4.6,Chai nước che miệng → occluded
+D06.png,face,eye_left,khác giá trị (IoU=0.53),unknown,open,mine,"4.4-1, 4.5","Không thấy rõ khe mắt (mặt quay/bóng tối/gọng kính/tay che) → unknown, không suy ra open"
+D06.png,face,eye_right,khác giá trị (IoU=0.53),unknown,open,mine,"4.4-1, 4.5","Không thấy rõ khe mắt (mặt quay/bóng tối/gọng kính/tay che) → unknown, không suy ra open"
+D06.png,face13,left_eye_outer.outside,khác cờ,1,0,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+D06.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+D06.png,face13,left_eye_inner.outside,khác cờ,1,0,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+D06.png,face13,left_eye_upper.outside,khác cờ,1,0,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+D06.png,face13,left_eye_lower.outside,khác cờ,1,0,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+D06.png,face13,mouth_right.occluded,khác cờ,0,1,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+D06.png,face13,mouth_right.outside,khác cờ,1,0,mine,4.6,"Mắt sau gọng/tròng kính tối, mặt quay → không đoán được vị trí → outside"
+S01_ir.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.8,Gối/đệm tím trên ghế là đồ vật mang theo → object type=other; peer bỏ sót
+S01_ir.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.1 child_seat,"Ghế bên trái ảnh là ghế trẻ em ngồi thẳng có lưng cao, không phải nôi có quai xách → child_seat"
+S01_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 child_seat,Peer gán infant_seat cho ghế trẻ em có lưng cao (xem dòng child_seat S01)
+S01_rgb.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.8,Gối/đệm tím trên ghế là đồ vật mang theo → object type=other; peer bỏ sót
+S01_rgb.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.1 child_seat,"Ghế bên trái ảnh là ghế trẻ em ngồi thẳng có lưng cao, không phải nôi có quai xách → child_seat"
+S01_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 child_seat,Peer gán infant_seat cho ghế trẻ em có lưng cao (xem dòng child_seat S01)
+S02_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.38,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S02_ir.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,ambiguous,4.1 child_seat / infant_seat,"Vật nằm nghiêng ở rear_right: mình gán child_seat, peer gán infant_seat; không thấy quai xách nhưng hình dạng bị che, hỏi coach"
+S02_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S02_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.1 child_seat / infant_seat,"Cùng vật với dòng child_seat S02, chờ coach phân xử"
+S02_rgb.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,ambiguous,4.1 child_seat / infant_seat,"Vật nằm nghiêng ở rear_right: mình gán child_seat, peer gán infant_seat; không thấy quai xách nhưng hình dạng bị che, hỏi coach"
+S02_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.40,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S02_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S02_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.1 child_seat / infant_seat,"Cùng vật với dòng child_seat S02, chờ coach phân xử"
+S03_ir.png,child_seat,occupied,khác giá trị (IoU=0.98),unknown,yes,mine,"4.1, 4.8 (occupied không có yes)","Ghế có trẻ ngồi; guideline v1.0 chỉ cho no/unknown, cabin_check báo lỗi với yes → giữ unknown, đưa vào câu hỏi leo thang"
+S03_ir.png,object,type,khác giá trị (IoU=0.90),other,cup,ambiguous,4.8 (không chắc thì other),"Vật hình trụ chỉ thấy trên IR-sim, không chắc là cốc hay chai → giữ other"
+S03_ir.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2 OMS,"Box thêm của peer nằm ở khóa dây an toàn ghế giữa (bộ phận xe, không phải đồ vật) → không gán; giữ nguyên"
+S03_rgb.png,child_seat,occupied,khác giá trị (IoU=0.94),unknown,yes,mine,"4.1, 4.8 (occupied không có yes)","Ghế có trẻ ngồi; guideline v1.0 chỉ cho no/unknown, cabin_check báo lỗi với yes → giữ unknown, đưa vào câu hỏi leo thang"
+S04_ir.png,child_seat,occupied,khác giá trị (IoU=0.94),unknown,yes,mine,"4.1, 4.8 (occupied không có yes)","Ghế có trẻ ngồi; guideline v1.0 chỉ cho no/unknown, cabin_check báo lỗi với yes → giữ unknown, đưa vào câu hỏi leo thang"
+S04_rgb.png,child_seat,occupied,khác giá trị (IoU=0.93),unknown,yes,mine,"4.1, 4.8 (occupied không có yes)","Ghế có trẻ ngồi; guideline v1.0 chỉ cho no/unknown, cabin_check báo lỗi với yes → giữ unknown, đưa vào câu hỏi leo thang"
+S04_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.42,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S04_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S05_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.30,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S05_ir.png,infant_seat,facing,khác giá trị (IoU=0.83),front,rear,ambiguous,4.1 infant_seat,"Nôi đặt nghiêng ngang ghế, không quay hẳn trước/sau; đề xuất thêm facing=unknown (câu hỏi leo thang 2)"
+S05_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S05_rgb.png,infant_seat,facing,khác giá trị (IoU=0.85),front,rear,ambiguous,4.1 infant_seat,"Nôi đặt nghiêng ngang ghế, không quay hẳn trước/sau; đề xuất thêm facing=unknown (câu hỏi leo thang 2)"
+S05_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.37,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S05_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S06_ir.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.8,"Thùng giấy trên ghế giữa là đồ vật, phải có box object type=box; peer bỏ sót"
+S06_rgb.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.8,"Thùng giấy trên ghế giữa là đồ vật, phải có box object type=box; peer bỏ sót"
+S07_ir.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.8,Gối/đệm tím trên ghế là đồ vật mang theo → object type=other; peer bỏ sót
+S07_rgb.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.8,Gối/đệm tím trên ghế là đồ vật mang theo → object type=other; peer bỏ sót
+S08_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.39,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S08_ir.png,child_seat,occupied,khác giá trị (IoU=0.93),unknown,yes,mine,"4.1, 4.8 (occupied không có yes)","Ghế có trẻ ngồi; guideline v1.0 chỉ cho no/unknown, cabin_check báo lỗi với yes → giữ unknown, đưa vào câu hỏi leo thang"
+S08_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S08_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.38,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
+S08_rgb.png,person,seatbelt,khác giá trị (IoU=0.93),unknown,not_worn,mine,"4.4-1, 4.7 seatbelt","Ảnh RGB tối, không thấy vùng ngực; không chép not_worn từ S08_ir sang → giữ unknown"
+S08_rgb.png,child_seat,occupied,khác giá trị (IoU=0.88),unknown,yes,mine,"4.1, 4.8 (occupied không có yes)","Ghế có trẻ ngồi; guideline v1.0 chỉ cho no/unknown, cabin_check báo lỗi với yes → giữ unknown, đưa vào câu hỏi leo thang"
+S08_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 face,"Giữ box mặt: trán đến cằm, không gồm tóc phía trên; box của peer ôm cả tóc/đỉnh đầu nên IoU thấp"
